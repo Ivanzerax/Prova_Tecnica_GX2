@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Somando 2 números</title>
+        <style>
+            body{
+                padding: 150px;
+                padding-top: 50px;
+                background-color: grey;
+            }
+            div{
+                text-align: center;
+                font-size: x-large;
+                border-style: groove;
+                border-width: 15px;
+                border-radius:20px 2px 20px 2px;
+                border-color: aqua;
+                text-align: center;
+                padding: 50px;
+                position: relative;
+                margin-left: 50px;
+                margin-right: 50px;
+            }    
+        </style>
+    </head>
+    <script>
+        function calculo() {
+            var a=parseFloat(document.fr.txtA.value);
+            var b=parseFloat(document.fr.txtB.value);
+            var s=(a+b);
+            document.getElementById("resposta").innerHTML= + a + " + " + b + " = " + s;
+        }
+    </script>
+    <body>
+        <div>
+            <form name="fr">
+                <h1>Somando 2 números</h1>
+                <p> Digite o primeiro número:</p> 
+                <input type="text"  value="0" name="txtA">
+                <p> Digite o segundo numero:</p>
+                <input type="text"  value="0" name="txtB"><br><br>
+                <input id="btn" type="button" name="btncalcular" value="Calcular" onclick="calculo()">
+            </form>
+            <p id="resposta" > </p>
+        </div>
+    </body>
+</html>
